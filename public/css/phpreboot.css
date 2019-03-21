@@ -1,0 +1,49 @@
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Raleway', sans-serif;
+}
+h1.welcome {
+    margin: 10px 0;
+}
+h1.welcome > span.logo-php {
+    color: forestgreen;
+    font-weight: bold;
+}
+h1.welcome > span.logo-reboot {
+    color: dodgerblue;
+    font-weight: bolder;
+}
+h2 {
+    margin: 5px 30px !important;
+}
+h3.title {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    color: dodgerblue;
+    text-transform: uppercase;
+    border-bottom: 1px dashed forestgreen;
+}
+h3.title > strong {
+    background-color: forestgreen;
+    color: #FFF;
+    padding: 0 4px;
+}
+.community > p {
+    color: #AAA;
+}
+.text-center {
+    text-align: center !important;
+}
+.div-center {
+    position: relative !important;
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.line {
+    clear: both;
+    position: relative;
+    width: 100%;
+    margin: 50px 0;
+    border-top: 1px dashed #DDD;
+}

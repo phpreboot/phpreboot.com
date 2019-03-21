@@ -8,6 +8,8 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/phpreboot.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
         <title>PHP Reboot</title>
     </head>
@@ -41,7 +43,43 @@
             </div>
         </nav>
 
-
+        <div class="container clearfix">
+            <div class="div-center">
+                <div class="row justify-content-md-center">
+                    <h1 class="col-auto welcome text-center">
+                        Welcome to
+                        <span class="logo-php">PHP</span>
+                        <span class="logo-reboot">Reboot</span>
+                    </h1>
+                </div>
+                <div class="row justify-content-md-center">
+                    <h2 class="col-auto text-center">
+                        PHP Reboot is a developers' community; It is the community 'Of the developers', 'By the developers', and 'For the developers'.
+                    </h2>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="row">
+                <div class="col">
+                    <div class="community">
+                        <h3 class="title"><strong>Of</strong> the developers</h3>
+                        <p>Community (leaders) made of developers. You can be community leader too.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="community">
+                        <h3 class="title"><strong>By</strong> the developers</h3>
+                        <p>Community code is developed by the developers. You can too (Open source project)</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="community">
+                        <h3 class="title"><strong>For</strong> the developers</h3>
+                        <p>Community providing contents for the developers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
