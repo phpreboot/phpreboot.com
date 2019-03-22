@@ -10,6 +10,7 @@
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/phpreboot.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
         <title>PHP Reboot</title>
     </head>
@@ -43,7 +44,7 @@
             </div>
         </nav>
 
-        <div class="container clearfix">
+        <div class="container-fluid clearfix container-phpreboot container-community">
             <div class="div-center">
                 <div class="row justify-content-md-center">
                     <h1 class="col-auto welcome text-center">
@@ -54,7 +55,12 @@
                 </div>
                 <div class="row justify-content-md-center">
                     <h2 class="col-auto text-center">
-                        PHP Reboot is a developers' community; It is the community 'Of the developers', 'By the developers', and 'For the developers'.
+                        What is PHP Reboot?
+                    </h2>
+                </div>
+                <div class="row justify-content-md-center">
+                    <h2 class="col-auto text-center">
+                        PHP Reboot is:
                     </h2>
                 </div>
             </div>
@@ -62,20 +68,79 @@
             <div class="row">
                 <div class="col">
                     <div class="community">
+                        <h4 class="subtitle">A community</h4>
                         <h3 class="title"><strong>Of</strong> the developers</h3>
-                        <p>Community (leaders) made of developers. You can be community leader too.</p>
+                        <p>Community (leaders) made of developers. You can be community leader too, <a href="#">know more</a>.</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="community">
+                        <h4 class="subtitle">A community</h4>
                         <h3 class="title"><strong>By</strong> the developers</h3>
-                        <p>Community code is developed by the developers. You can too (Open source project)</p>
+                        <p>Community code is developed by the developers. Start <a href="#">helping in development</a> (Open source project)</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="community">
+                        <h4 class="subtitle">A community</h4>
                         <h3 class="title"><strong>For</strong> the developers</h3>
-                        <p>Community providing contents for the developers.</p>
+                        <p>Community providing contents for the developers. You can <a href="#">start reading now</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid clearfix container-phpreboot container-whatwedo">
+            <div class="div-center">
+                <div class="row justify-content-md-center">
+                    <h2 class="col-auto text-center title">
+                        What you can do at PHP Reboot?
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="box-outer">
+                            <div class="box-inner">
+                                <div class="box-icon">
+                                    <i class="fas fa-atlas"></i>
+                                </div>
+                                <h3>Read</h3>
+                                <p>Read a collection of great articles from web and blogs on PHP Reboot.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box-outer">
+                            <div class="box-inner">
+                                <div class="box-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3>Code</h3>
+                                <p>Follow open source PHP Reboot code and learn to write good code.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box-outer">
+                            <div class="box-inner">
+                                <div class="box-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3>Learn</h3>
+                                <p>Join the community, attend meetups, webinars and other community events.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box-outer">
+                            <div class="box-inner">
+                                <div class="box-icon">
+                                    <i class="fas fa-blog"></i>
+                                </div>
+                                <h3>Write</h3>
+                                <p>Willing to share your knowledge, make your personal blog on PHP Reboot.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

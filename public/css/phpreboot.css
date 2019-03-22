@@ -2,10 +2,11 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'Raleway', sans-serif;
 }
 h1.welcome {
-    margin: 10px 0;
+    margin: 30px 0 10px 0;
 }
 h1.welcome > span.logo-php {
     color: forestgreen;
+    padding: 0 5px;
     font-weight: bold;
 }
 h1.welcome > span.logo-reboot {
@@ -14,6 +15,10 @@ h1.welcome > span.logo-reboot {
 }
 h2 {
     margin: 5px 30px !important;
+}
+h2.title {
+    margin: 10px 10px 30px !important;
+    color: dodgerblue;
 }
 h3.title {
     font-size: 25px;
@@ -25,11 +30,16 @@ h3.title {
 }
 h3.title > strong {
     background-color: forestgreen;
-    color: #FFF;
+    color: white;
     padding: 0 4px;
 }
+h4.subtitle {
+    font-size: 20px;
+    line-height: 20px;
+    color: dodgerblue;
+}
 .community > p {
-    color: #AAA;
+    color: #777;
 }
 .text-center {
     text-align: center !important;
@@ -44,6 +54,52 @@ h3.title > strong {
     clear: both;
     position: relative;
     width: 100%;
-    margin: 50px 0;
-    border-top: 1px dashed #DDD;
+    margin: 20px 0;
+    border-top: 1px dashed #888;
+}
+.container-community {
+    background-color: #AFD;
+}
+.container-whatwedo {
+    background-color: #FFF;
+}
+.container-phpreboot {
+    padding-bottom: 30px;
+}
+@media (min-width: 1024px) {
+    .container-phpreboot {
+        padding: 0 120px 30px 120px;
+    }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+    .container-phpreboot {
+        padding: 0 60px 30px 120px;
+    }
+}
+.box-outer {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.box-inner {
+    margin-top: 0;
+    border: 1px solid forestgreen;
+    border-radius: 5px;
+    padding: 25px 10px 10px 10px;
+    text-align: center;
+}
+.box-inner > h3 {
+    color: forestgreen;
+}
+.box-inner > p {
+    color: #777;
+}
+.box-icon {
+    background-color: #FFF;
+    color: forestgreen;
+    width: 80px;
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    margin: 0 0 0 -40px;
+    font-size: 40px;
 }
