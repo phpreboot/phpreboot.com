@@ -44,6 +44,9 @@ h4.subtitle {
 .text-center {
     text-align: center !important;
 }
+.text-left {
+    text-align: left;
+}
 .div-center {
     position: relative !important;
     float: none !important;
