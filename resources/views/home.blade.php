@@ -16,7 +16,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">PHP Reboot</a>
+            <a class="navbar-brand" href="#">PHP Reboot Logo</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#PHPRebootNavBar" aria-controls="PHPRebootNavBar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -145,33 +145,24 @@
                 </div>
             </div>
         </div>
-
         <div class="container-fluid clearfix container-phpreboot container-community">
-            <div class="div-center">
-                <div class="row justify-content-md-center">
-                    <h2 class="col-auto text-center">
-                        Articles added/published recently.
-                    </h2>
-                </div>
-            </div>
-            <div class="line"></div>
-            <div class="row">
+            <div class="row padding-top-30">
                 <div class="col">
                     <div class="row justify-content-md-center">
                         <div class="col text-center">
                             <h3>Articles added recently.</h3>
                             <div class="line"></div>
-                            <div class="accordion text-left" id="accordionExample">
+                            <div class="accordion text-left" id="articlesAdded">
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Collapsible Group Item #1
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#addedOne" aria-expanded="true" aria-controls="addedOne">
+                                                Article 1 taken from internet
                                             </button>
                                         </h3>
                                     </div>
 
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div id="addedOne" class="collapse show" aria-labelledby="headingOne" data-parent="#articlesAdded">
                                         <div class="card-body">
                                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                                         </div>
@@ -180,12 +171,12 @@
                                 <div class="card">
                                     <div class="card-header" id="headingTwo">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                Collapsible Group Item #2
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#addedTwo" aria-expanded="false" aria-controls="addedTwo">
+                                                Article two taken form internet
                                             </button>
                                         </h3>
                                     </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div id="addedTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#articlesAdded">
                                         <div class="card-body">
                                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                                         </div>
@@ -194,12 +185,12 @@
                                 <div class="card">
                                     <div class="card-header" id="headingThree">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                Collapsible Group Item #3
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#addedThree" aria-expanded="false" aria-controls="addedThree">
+                                                Article three taken from internet
                                             </button>
                                         </h3>
                                     </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div id="addedThree" class="collapse" aria-labelledby="headingThree" data-parent="#articlesAdded">
                                         <div class="card-body">
                                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                                         </div>
@@ -214,6 +205,51 @@
                         <div class="col text-center">
                             <h3>Articles published recently.</h3>
                             <div class="line"></div>
+                            <div class="accordion text-left" id="articlesPublished">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h3 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#publishedOne" aria-expanded="true" aria-controls="publishedOne">
+                                                Article one published on PHP Reboot
+                                            </button>
+                                        </h3>
+                                    </div>
+
+                                    <div id="publishedOne" class="collapse show" aria-labelledby="headingOne" data-parent="#articlesPublished">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h3 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#publishedTwo" aria-expanded="false" aria-controls="publishedTwo">
+                                                Article two published on PHP Reboot
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="publishedTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#articlesPublished">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h3 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#publishedThree" aria-expanded="false" aria-controls="publishedThree">
+                                                Article three published on PHP Reboot
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="publishedThree" class="collapse" aria-labelledby="headingThree" data-parent="#articlesPublished">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
