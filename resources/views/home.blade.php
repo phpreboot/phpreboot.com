@@ -256,6 +256,27 @@
             </div>
         </div>
 
+        <div class="container-fluid clearfix container-phpreboot container-whatwedo">
+            <div class="div-center">
+                <div class="row justify-content-md-center">
+                    <h3 class="col-auto text-center padding-top-30">
+                        Want to have a weekly newsletter in your inbox
+                    </h3>
+                </div>
+                <div class="row justify-content-md-center">
+                    <form action="#" method="post" class="form-inline">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="email">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
