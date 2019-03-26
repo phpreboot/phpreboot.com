@@ -109,3 +109,31 @@ h4.subtitle {
 .padding-top-30 {
     padding-top: 30px;
 }
+#footer {
+    background-color: #333;
+    color: #CCC;
+    border-top-color: rgba(0,0,0,0.2);
+}
+#copyrights {
+    background-color: rgba(0,0,0,0.2);
+    color: rgba(255,255,255,0.25);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    padding: 40px 0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+.copyright-links a {
+    color: rgba(255,255,255,0.25);
+    border-bottom-color: rgba(255,255,255,0.25);
+}
+.social-icon {
+    color: #555;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    line-height: 30px !important;
+    margin-right: 20px;
+}
+.social-icon:hover {
+    color: dodgerblue;
+}
