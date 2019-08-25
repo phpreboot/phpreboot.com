@@ -15,13 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes(['verify' => true]);
 
 // Routes where user must be login in
-Route::get('/user/article/new', 'ArticleController@new')->name('article-new');
-Route::post('/user/article', 'ArticleController@store')->name('article-store');
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/home', 'HomeController@index')->name('home');
+
+    Route::get('/user/article/new', 'ArticleController@new')->name('article-new')->middleware('verified');
+    Route::post('/user/article', 'ArticleController@store')->name('article-store');
+    Route::post('/article/{article}/comment', 'CommentController@new')->name('comment-new');
+});
+
 Route::get('/article/{article}', 'ArticleController@show')->name('article-show');
 
 Route::get('/adminlte/blank', 'AdminLtecontroller@blank');

@@ -2,11 +2,12 @@
 
 namespace App;
 
+use Illuminate\Contracts\Auth\CanResetPassword;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail, CanResetPassword
 {
     use Notifiable;
 
@@ -43,5 +44,13 @@ class User extends Authenticatable
     public function articles()
     {
         return $this->hasMany('App\Models\Article', 'author_id');
+    }
+
+    /**
+     * One user (author) may write multiple comments
+     */
+    public function comments()
+    {
+        return $this->hasMany('App\Models\Comment', 'author_id');
     }
 }

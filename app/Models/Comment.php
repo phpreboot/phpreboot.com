@@ -5,10 +5,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Article extends Model
+class Comment extends Model
 {
     /**
-     * An article must have an author
+     * A comment must have an author
      */
     public function author()
     {
@@ -16,10 +16,10 @@ class Article extends Model
     }
 
     /**
-     * One article may have multiple comments
+     * A comment belongs to an article
      */
-    public function comments()
+    public function article()
     {
-        return $this->hasMany('App\Models\Comment', 'author_id');
+        return $this->belongsTo('App\Article');
     }
 }

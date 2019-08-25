@@ -38,9 +38,84 @@
                         </div>
                         <!-- /.card-footer -->
                     </div>
+                    <div class="row" id="comment-section">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header border-transparent">
+                                    <h3 class="card-title">Write a comment</h3>
+
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-widget="collapse">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-tool" data-widget="remove">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body p-0">
+                                    @if ($errors->any())
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="alert alert-warning alert-dismissible">
+                                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                                    <h5><i class="icon fas fa-info"></i> Oops! There was problems.</h5>
+                                                    <ul>
+                                                        @foreach ($errors->all() as $error)
+                                                            <li>{{ $error }}</li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endif
+                                    <form role="form" method="post" action="/article/{{ $article->id }}/comment">
+                                        @csrf
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <textarea name="comment" id="comment" class="form-control" rows="5" placeholder="Enter comment">{{ old('comment') }}</textarea>
+                                                <div id="comment-word-count">0 / 1000 characters</div>
+                                                <div><strong>Why only 1000 Characters?</strong></div>
+                                                <div>
+                                                    Although we encourage counter view, we do discourage lot of contents (another article as comment) on single page to avoid confusion for readers. This is also the reason for not supporting the markdown in the comments.
+                                                </div>
+                                                <div>
+                                                    If your comment need lot of words or code to express something, better write a new article and provide link to article in comment, with some text describing it in short.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button type="submit" class="btn btn-primary">Comment</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /.card-footer -->
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-12">
-                            <h4>Comments - Currently static for design.</h4>
+                            <h4>Previous Comments</h4>
+                            @foreach ($comments as $comment)
+                                <div class="post post-1">
+                                    <div class="user-block">
+                                        <img class="img-circle img-bordered-sm" src="../../dist/img/user1-128x128.jpg" alt="user image">
+                                        <span class="username">
+                                        <a href="#">{{ $comment->author->name }}</a>
+                                    </span>
+                                        <span class="description">Shared publicly - {{ $comment->created_at }} PM</span>
+                                    </div>
+                                    <!-- /.user-block -->
+                                    <p>
+                                        {{ $comment->comment }}
+                                    </p>
+
+                                    <p>
+                                        <a href="#" class="link-black text-sm">{{ isset($replyCount[$comment->id]) ? $replyCount[$comment->id] : '0' }} Replies</a>
+                                    </p>
+                                </div>
+                            @endforeach
                             <div class="post post-1">
                                 <div class="user-block">
                                     <img class="img-circle img-bordered-sm" src="../../dist/img/user1-128x128.jpg" alt="user image">
@@ -137,25 +212,6 @@
                                 </p>
                             </div>
 
-                            <div class="post post-1">
-                                <div class="user-block">
-                                    <img class="img-circle img-bordered-sm" src="../../dist/img/user1-128x128.jpg" alt="user image">
-                                    <span class="username">
-                          <a href="#">Jonathan Burke Jr.</a>
-                        </span>
-                                    <span class="description">Shared publicly - 5 days ago</span>
-                                </div>
-                                <!-- /.user-block -->
-                                <p>
-                                    Lorem ipsum represents a long-held tradition for designers,
-                                    typographers and the like. Some people hate it and argue for
-                                    its demise, but others ignore.
-                                </p>
-
-                                <p>
-                                    <a href="#" class="link-black text-sm"><i class="fas fa-link mr-1"></i> Demo File 1 v1</a>
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -309,6 +365,19 @@
 
 @section('page-script')
     <script src="/js/prism.js"></script>
+    <script language="JavaScript">
+        $('#comment').on('input selectionchange propertychange', function() {
+            var comment = $('#comment').val();
+            var length = comment.length;
+            if (length > 1000) {
+                comment = comment.substr(0, 1000);
+                $('#comment').val(comment);
+                length = 1000;
+            }
+            // comment-word-count">0 / 1000 characters
+            $("#comment-word-count").html(length + " / 1000 characters");
+        });
+    </script>
 @endsection
 
 @section('page-styles')
